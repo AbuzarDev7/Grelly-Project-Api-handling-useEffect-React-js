@@ -2,6 +2,7 @@
 
 import axios from "axios";
 import {useEffect, useState } from "react";
+import Card from "./components/Card";
 
 
 const App = () => {
@@ -38,13 +39,7 @@ const App = () => {
     className="w-full sm:w-[48%] md:w-[31%] lg:w-[23%] xl:w-[19%] bg-neutral-900 p-3 rounded-xl shadow"
   >
     
-   
-    <img
-      className="w-full h-48 object-cover rounded-lg"
-      src={item.download_url}
-      alt=""
-    />
-    <h2 className="text-white text-center mt-2">{item.author}</h2>
+<Card item={item}/>
   </div>
 
 
