@@ -50,14 +50,14 @@ const App = () => {
 
   return (
     <>
-    <h2 className="bg-black text-white text-6xl fixed">{index}</h2>
+   
       <div className="min-h-screen bg-black text-amber-50 p-5">
      
         
         <div className="flex flex-wrap gap-5 justify-center">
           {printUsersData}
         </div>
-        <div className=" flex justify-center items-center p-4 gap-4">
+        <div className=" flex justify-center items-center p-4 gap-5">
           <  button className=" bg-amber-300 text-black py-4 px-6 rounded text-2xl" onClick={()=>{
             if(index > 1){
               setUserData([])
@@ -65,6 +65,7 @@ const App = () => {
             }
           }
           }>Prev</ button>
+          <h2 className=" text-white text-2xl">Page {index}</h2>
           <  button className=" bg-amber-300 text-black py-4 px-6 rounded text-2xl" onClick={()=>{
           setIndex(index + 1)
           setUserData([])
